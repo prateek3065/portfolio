@@ -1,0 +1,15 @@
+{
+  "HOME": {},
+  "COMMON": {
+    "LOADING": "Ładowanie...",
+    "ERROR": "Wystąpił błąd",
+    "NO_DATA": "Brak dostępnych danych",
+    "SEARCH": "Szukaj",
+    "CANCEL": "Anuluj",
+    "CONFIRM": "Potwierdź",
+    "YES": "Tak",
+    "NO": "Nie",
+    "OK": "OK",
+    "CLOSE": "Zamknij"
+  }
+}
