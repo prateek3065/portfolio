@@ -2,6 +2,8 @@ import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { IBM_Plex_Sans } from "next/font/google";
 import { ReactNode } from "react"; // Ensure ReactNode is imported
+import WithBodyScrollEvent from "./(client)/with-body-scroll-event";
+import WithStoreProvider from "./(client)/with-store-provider";
 
 const IBMPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -22,12 +24,14 @@ export default async function LocaleLayout({
 
   return (
     <html className={`${IBMPlexSans.className} overflow-hidden`} lang={locale}>
-      <head />
-      <body className="h-screen overflow-auto">
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <main className="h-full">{children}</main>
-        </NextIntlClientProvider>
-      </body>
+      <WithStoreProvider>
+        <head />
+        <WithBodyScrollEvent>
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <main className="h-full">{children}</main>
+          </NextIntlClientProvider>
+        </WithBodyScrollEvent>
+      </WithStoreProvider>
     </html>
   );
 }
