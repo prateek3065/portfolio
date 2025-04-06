@@ -1,6 +1,9 @@
-import { useTranslations } from "next-intl";
+import { redirect } from "@/i18n/routing";
 
 export default function Page() {
-  const t = useTranslations();
-  return <div>{t("COMMON.LOADING")}</div>;
+  redirect({
+    href: "/home",
+    locale: "en",
+  });
+  return <div>Redirecting</div>;
 }
