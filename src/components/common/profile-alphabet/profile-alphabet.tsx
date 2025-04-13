@@ -57,7 +57,7 @@ const ProfileAlphabet: React.FC<ProfileAlphabetProps> = (props) => {
         left: left,
         // right: props.right,
         zIndex: props.zIndex,
-        fontFamily: "fantasy",
+        // fontFamily: "fantasy",
         paddingTop: props.paddingTop ?? undefined,
       }}
     >

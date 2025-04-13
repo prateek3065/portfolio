@@ -50,7 +50,7 @@ const alphabets: Array<ProfileAlphabetProps> = [
 
 const CardHeader: React.FC = () => {
   return (
-    <div className="h-[38px] flex justify-between px-4">
+    <div className="h-[38px] flex justify-between px-4 py-[6px]">
       <div className="flex items-center gap-x-2">
         <Button type="close" />
         <Button type="minimize" />
@@ -72,7 +72,6 @@ const CardHeader: React.FC = () => {
               position={item.position}
               left={item.left}
               zIndex={item.zIndex}
-              paddingTop={item.paddingTop}
               fontSize={item.fontSize}
               textColor={item.textColor}
             />
