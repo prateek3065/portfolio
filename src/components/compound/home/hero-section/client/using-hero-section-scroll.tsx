@@ -40,7 +40,7 @@ const UsingHeroSectionScroll: React.FC = () => {
       className="absolute top-0 w-full h-[44rem] overflow-scroll scrollbar-hide"
       style={{ zIndex: bodyScrollTop != 0 ? -20 : undefined }}
     >
-      <div className="absolute w-full h-[800vh]"></div>
+      <div className="absolute w-full h-[1300vh]"></div>
     </div>
   );
 };
