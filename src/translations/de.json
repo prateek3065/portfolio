@@ -1,5 +1,15 @@
 {
-  "HOME": {},
+  "HOME": {
+    "ABOUT_ME_CARD": {
+      "INTRO": {
+        "LINE0": "Hallo, ich entwerfe Frontends, die sich anfühlen, als wären sie schon immer so gedacht gewesen.",
+        "LINE1": "Nicht nur poliert - sondern auch zielgerichtet. Schnell, flexibel und leise leistungsstark.",
+        "LINE2": "Ich denke in Systemen. Ich kümmere mich um den Fluss. Wie Dinge sich bewegen, verbinden und skalieren - für Teams und für Benutzer.",
+        "LINE3": "Code ist mein Handwerk, aber Erfahrung ist das Ziel. Was ich baue, lebt in Bewegung, in Momenten, in Mikro-Interaktionen.",
+        "LINE4": "Ich habe Teams geleitet und von Null auf ein Produkt aufgebaut, das im ersten Jahr 1 Million Dollar verdient hat. Und ich fange gerade erst an."
+      }
+    }
+  },
   "COMMON": {
     "LOADING": "Lade...",
     "ERROR": "Ein Fehler ist aufgetreten",

@@ -1,5 +1,15 @@
 {
-  "HOME": {},
+  "HOME": {
+    "ABOUT_ME_CARD": {
+      "INTRO": {
+        "LINE0": "Cześć, projektuję interfejsy, które wydają się być stworzone z myślą o użytkownikach.",
+        "LINE1": "Nie tylko dopracowane - ale i celowe. Szybkie, elastyczne i cicho potężne.",
+        "LINE2": "Myślę w systemach. Dbam o przepływ. Jak rzeczy się poruszają, łączą i skalują - dla zespołów i dla użytkowników.",
+        "LINE3": "Kod to mój rzemiosło, ale doświadczenie to cel. To, co buduję, żyje w ruchu, w momentach, w mikro-interakcjach.",
+        "LINE4": "Prowadziłem zespoły i zbudowałem produkt od podstaw, który zarobił 1 milion dolarów w pierwszym roku. I dopiero zaczynam."
+      }
+    }
+  },
   "COMMON": {
     "LOADING": "Ładowanie...",
     "ERROR": "Wystąpił błąd",
