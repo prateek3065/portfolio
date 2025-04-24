@@ -1,7 +1,7 @@
 import WithRotationOnScroll from "@/components/compound/home/hero-section/about-me-card/client/with-rotation-on-scroll/with-rotation-on-scroll";
-import CardHeader from "../card-header/card-header";
-import CardBody from "../card-body/card-body";
-import CardBackground from "../card-background/card-background-cover";
+import CardHeader from "./card-header/card-header";
+import CardBody from "./card-body/card-body";
+import CardBackground from "./card-background/card-background-cover";
 
 const AboutMeCard: React.FC = () => {
   return (

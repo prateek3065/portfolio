@@ -1,14 +1,14 @@
 import HeroSection from "@/components/compound/home/hero-section/hero-section";
+import MyTechStack from "@/components/compound/home/my-tech-stack/my-tech-stack";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <section className="h-[400rem] w-full">
-        <div className="text-white text-6xl font-extrabold w-full text-center">
-          This is another section
-        </div>
-      </section>
+      <div className="relative w-full bottom-[2rem] px-8 md:px-40 lg:px-60">
+        <div className="h-[1px] bg-[#262626]" />
+      </div>
+      <MyTechStack />
     </>
   );
 }
