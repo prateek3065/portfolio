@@ -1,12 +1,24 @@
 import { ReactNode } from "react"; // Ensure ReactNode is imported
 import Image from "next/image";
 import Button from "@/components/common/buttons/button";
+import { routing } from "@/i18n/routing";
 type LocaleLayoutProps = {
   params: Promise<{ locale: "en" | "de" | "pl" }>; // Make params a Promise
   children: ReactNode;
 };
 
-export default async function LocaleLayout({ children }: LocaleLayoutProps) {
+export function generateStaticParams() {
+  const staticParams = routing.locales.map((locale) => ({ locale }));
+  console.log("generateStaticParams2", staticParams);
+  return staticParams;
+}
+
+export default async function LocaleLayout({
+  children,
+  params,
+}: LocaleLayoutProps) {
+  const data = await params;
+  console.log("LocaleLayout", data);
   return (
     <div className="h-full w-full bg-black relative">
       <Header />

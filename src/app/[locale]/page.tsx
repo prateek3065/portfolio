@@ -1,18 +1,16 @@
-import { redirect } from "@/i18n/routing";
+import { redirect } from "@/i18n/navigation";
+import { setRequestLocale } from "next-intl/server";
 
-export async function generateStaticParams() {
-  return [
-    { locale: "en" },
-    { locale: "de" },
-    { locale: "pl" },
-    // Add all locales you support
-  ];
-}
+type PageProps = {
+  params: Promise<{ locale: string }>; // Make params a Promise
+};
 
-export default function Page() {
+export default async function Page({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   redirect({
     href: "/home",
-    locale: "en",
+    locale: locale,
   });
   return <div>Redirecting</div>;
 }
