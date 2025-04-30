@@ -1,14 +1,6 @@
+export const dynamic = "force-dynamic";
 import HeroSection from "@/components/compound/home/hero-section/hero-section";
 import MyTechStack from "@/components/compound/home/my-tech-stack/my-tech-stack";
-
-export async function generateStaticParams() {
-  return [
-    { locale: "en" },
-    { locale: "de" },
-    { locale: "pl" },
-    // Add all locales you support
-  ];
-}
 
 export default function Home() {
   return (
