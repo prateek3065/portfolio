@@ -37,7 +37,7 @@ const UsingHeroSectionScroll: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="absolute top-0 w-full h-[44rem] overflow-scroll scrollbar-hide"
+      className="absolute top-0 w-full h-[100vh] overflow-scroll scrollbar-hide"
       style={{ zIndex: bodyScrollTop != 0 ? -20 : undefined }}
     >
       <div className="absolute w-full h-[1300vh]"></div>

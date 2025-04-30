@@ -1,10 +1,11 @@
 import AboutMeHeadlines from "./client/about-me-headlines/about-me-headlines";
 import CardScrollProgressIndicator from "./client/card-scroll-progress-indicator/card-scroll-progress-indicator";
+import DownArrow from "./client/down-arrow/down-arrow";
 import MyProfilePhoto from "./my-profile-photo/my-profile-photo";
 
 const CardBody: React.FC = () => {
   return (
-    <div className="grow flex pb-[10px]">
+    <div className="relative grow flex pb-[10px]">
       <div className="relative flex-grow-[229] shrink basis-0 flex flex-col-reverse md:flex-row justify-between gap-x-2 p-12">
         <div className="flex grow">
           <AboutMeHeadlines />
@@ -22,6 +23,9 @@ const CardBody: React.FC = () => {
             <CardScrollProgressIndicator />
           </div>
         </div>
+      </div>
+      <div className="absolute w-full flex justify-center bottom-20">
+        <DownArrow />
       </div>
     </div>
   );
