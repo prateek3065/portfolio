@@ -40,7 +40,7 @@ const AboutMeHeadlines: React.FC = () => {
       totalWords: combinedWords,
       breaks: breaks,
     };
-  }, []);
+  }, [t]);
 
   const currentParagraph: {
     paragraph: string;

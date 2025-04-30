@@ -60,7 +60,11 @@ const Paragraph: React.FC<ParagraphProps> = (props) => {
       paragraph: props.paragraph,
       wordProgressDivision: wordProgressDivision,
     });
-  }, [props.paragraph]);
+  }, [
+    props.paragraph,
+    props.lowerProgressThreshold,
+    props.upperProgressThreshold,
+  ]);
 
   useEffect(() => {
     console.log("props", props);
