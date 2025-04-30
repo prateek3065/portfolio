@@ -1,8 +1,28 @@
 export const dynamic = "force-dynamic";
 import HeroSection from "@/components/compound/home/hero-section/hero-section";
 import MyTechStack from "@/components/compound/home/my-tech-stack/my-tech-stack";
+import { routing } from "@/i18n/routing";
+import { hasLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
 
-export default function Home() {
+export function generateStaticParams() {
+  const staticParams = routing.locales.map((locale) => ({ locale }));
+  console.log("generateStaticParams at page", staticParams);
+  return staticParams;
+}
+
+type PageProps = {
+  params: Promise<{ locale: string }>; // Make params a Promise
+};
+
+export default async function Page({ params }: PageProps) {
+  const { locale } = await params;
+  console.log("Page props", locale);
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+  setRequestLocale(locale);
   return (
     <>
       <HeroSection />
