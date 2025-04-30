@@ -360,10 +360,12 @@ const RolesAndResponsibilitiesABA: React.FC = () => {
   );
 };
 
-export default Page;
-
 const Bullet: React.FC = () => {
   return (
     <div className="bg-[#4d74ae] w-[6px] h-[6px] rounded-full relative top-[21%] left-[42%]"></div>
   );
 };
+
+export default Page;
+
+

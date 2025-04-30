@@ -28,7 +28,7 @@ const particle41Styles = StyleSheet.create({
     width: 28, // w-7 => 7 * 4
     height: 28, // h-[28px]
     aspectRatio: 1, // aspect-square
-    backgroundColor: "#ede8e8",
+    backgroundColor: "white",
     overflow: "hidden",
     borderWidth: 2,
     borderColor: "#ffffff",
@@ -65,6 +65,8 @@ const particle41Styles = StyleSheet.create({
     fontSize: 10,
     color: "#233b5f",
     textAlign: "right",
+    marginRight: 8,
+    alignItems: "flex-end",
   },
   details: {
     display: "flex",
@@ -74,7 +76,75 @@ const particle41Styles = StyleSheet.create({
     paddingTop: 4, // pt-2
     gap: 4, // gap-y-1
   },
+  skillsWrapper: {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    fontSize: 10,
+    color: "#233b5f",
+    columnGap: 5,
+    marginTop: 4,
+    maxWidth: "365px",
+  },
+  skillItem: {
+    display: "flex",
+    height: 11, // h-4 => 4 * 4
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  skillText: {
+    fontSize: 10,
+    color: "#757575",
+  },
+  skillLabelContainer: {
+    height: 12,
+    display: "flex",
+    alignItems: "center",
+  },
+  lineItem: {
+    display: "flex",
+    flexDirection: "row",
+    gap: 8,
+    alignItems: "flex-start",
+    marginTop: 8,
+  },
+  bulletSpace: {
+    display: "flex",
+    flexDirection: "row",
+    width: 28,
+    flexShrink: 0,
+  },
 });
+
+// const Skills = [
+//   "NextJS (App Router)",
+//   "Typescript",
+//   "Redux",
+//   "TailwindCSS",
+//   "JEST",
+//   "React Native",
+//   "React Query",
+//   "pnpm",
+//   "React Testing Library",
+//   "Google Analytics",
+//   "Sonar Cloud",
+//   "Figma",
+//   "AWS",
+//   "Git",
+//   "Github",
+//   "Jira",
+//   "Postman",
+//   "Javascript",
+//   "HTML",
+//   "CSS",
+//   "Agile Methodology",
+//   "SEO",
+//   "Debugging",
+//   "C#",
+//   "ASP.NET",
+//   "PostgreSQL",
+//   "Test Driven Development",
+// ];
 
 const Particle41: React.FC = () => {
   return (
@@ -93,7 +163,7 @@ const Particle41: React.FC = () => {
           </View>
         </View>
         <View style={particle41Styles.rightSection}>
-          <Text>Pune</Text>
+          <Text>Pune {" (Hybrid)"}</Text>
           <Text>Aug 2021 - Present</Text>
         </View>
       </View>
@@ -102,6 +172,22 @@ const Particle41: React.FC = () => {
         <RolesAndResponsibilitiesPodium />
         <RolesAndResponsibilitiesRepspark />
       </View>
+      {/* <View style={particle41Styles.lineItem}>
+        <View style={particle41Styles.bulletSpace} />
+        <View style={particle41Styles.skillsWrapper}>
+          <Text style={particle41Styles.skillLabelContainer}>
+            Skills aquired at Particle41:
+          </Text>
+          {Skills.map((tech, index) => (
+            <View key={tech} style={particle41Styles.skillItem}>
+              <Text style={particle41Styles.skillText}>
+                {tech}
+                {index !== Skills.length - 1 ? "," : ""}
+              </Text>
+            </View>
+          ))}
+        </View>
+      </View> */}
     </View>
   );
 };

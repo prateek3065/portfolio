@@ -2,6 +2,7 @@
 import { Text, StyleSheet, View } from "@react-pdf/renderer";
 import Particle41 from "./particle41/particle41";
 import WebbeyTechnologies from "./webbey-technologies/webbey-technologies";
+import Freelance from "./freelance/freelance";
 
 const experienceDetailsStyles = StyleSheet.create({
   container: {
@@ -22,6 +23,7 @@ const experienceDetailsStyles = StyleSheet.create({
     fontSize: 14, // text-sm
     fontWeight: "extrabold", // closest match, might need custom font weight registration
     color: "#233b5f",
+    textDecoration: "underline",
   },
   divider: {
     width: "300px",
@@ -37,10 +39,10 @@ const ExperienceDetails: React.FC = () => {
     <View id="ExperienceDetails" style={experienceDetailsStyles.container}>
       <View style={experienceDetailsStyles.header}>
         <Text style={experienceDetailsStyles.experienceText}>Experience</Text>
-        <View style={experienceDetailsStyles.divider} />
       </View>
       <Particle41 />
       <WebbeyTechnologies />
+      <Freelance />
     </View>
   );
 };

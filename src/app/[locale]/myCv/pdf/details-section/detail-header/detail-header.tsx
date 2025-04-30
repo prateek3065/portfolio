@@ -25,7 +25,7 @@ const detailHeaderStyles = StyleSheet.create({
     fontWeight: "bold",
   },
   text2: {
-    color: "#233b5f",
+    color: "white",
     fontStyle: "italic",
   },
   text3: {

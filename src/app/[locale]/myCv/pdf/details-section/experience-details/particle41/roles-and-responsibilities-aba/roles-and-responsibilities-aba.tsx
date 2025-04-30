@@ -40,6 +40,7 @@ const rolesAndResponsibilitiesABAStyles = StyleSheet.create({
     color: "#233b5f",
     maxWidth: "365px",
     display: "flex",
+    textAlign: "justify",
   },
   skillsWrapper: {
     display: "flex",
@@ -49,11 +50,11 @@ const rolesAndResponsibilitiesABAStyles = StyleSheet.create({
     color: "#233b5f",
     columnGap: 5,
     marginTop: 4,
-    maxWidth: "340px",
+    maxWidth: "365px",
   },
   skillItem: {
     display: "flex",
-    height: 12, // h-4 => 4 * 4
+    height: 11, // h-4 => 4 * 4
     flexDirection: "row",
     alignItems: "center",
   },
@@ -72,27 +73,6 @@ const rolesAndResponsibilitiesABAStyles = StyleSheet.create({
     alignItems: "center",
   },
 });
-
-const ABATechStack = [
-  "NextJS (App Router)",
-  "Typescript",
-  "Redux",
-  "TailwindCSS",
-  "JEST",
-  "React Testing Library",
-  "Figma",
-  "AWS",
-  "Git",
-  "Github",
-  "Jira",
-  "Postman",
-  "Javascript",
-  "HTML",
-  "CSS",
-  "Agile Methodology",
-  "SEO",
-  "Debugging",
-];
 
 const RolesAndResponsibilitiesABA: React.FC = () => {
   return (
@@ -116,16 +96,9 @@ const RolesAndResponsibilitiesABA: React.FC = () => {
           <Bullet />
         </View>
         <Text style={rolesAndResponsibilitiesABAStyles.descriptionText}>
-          Delivered a scalable SaaS product from scratch, in 12 months,
-          generating $1M+ revenue through improved user engagement, conversion
-          rates, and{" "}
-          <Link
-            style={rolesAndResponsibilitiesABAStyles.link}
-            href="https://www.linkedin.com/in/prateek-sharma-891721196/details/recommendations/?detailScreenTabIndex=0"
-          >
-            client satisfaction
-          </Link>
-          .
+          Delivered a scalable SaaS product in 12 months, generating $1M+
+          revenue through enhanced engagement, conversions and client
+          satisfaction.
         </Text>
       </View>
 
@@ -134,10 +107,8 @@ const RolesAndResponsibilitiesABA: React.FC = () => {
           <Bullet />
         </View>
         <Text style={rolesAndResponsibilitiesABAStyles.descriptionText}>
-          Led the design and development of a high-conversion client-facing
-          marketplace for tax, legal, and consulting services, focusing on UX/UI
-          best practices, performance optimization to enhance user experience
-          and retention.
+          Led high-conversion marketplace design for tax, legal, and consulting
+          services, optimizing UX/UI and performance to boost user retention.
         </Text>
       </View>
 
@@ -169,27 +140,6 @@ const RolesAndResponsibilitiesABA: React.FC = () => {
           Collaborated with stakeholders to align frontend strategy with
           business goals, ensuring seamless cross-browser compatibility.
         </Text>
-      </View>
-
-      {/* Skills */}
-      <View style={rolesAndResponsibilitiesABAStyles.lineItem}>
-        <View style={rolesAndResponsibilitiesABAStyles.bulletSpace} />
-        <View style={rolesAndResponsibilitiesABAStyles.skillsWrapper}>
-          <Text style={rolesAndResponsibilitiesABAStyles.skillLabelContainer}>
-            Skills
-          </Text>
-          {ABATechStack.map((tech, index) => (
-            <View
-              key={tech}
-              style={rolesAndResponsibilitiesABAStyles.skillItem}
-            >
-              <Text style={rolesAndResponsibilitiesABAStyles.skillText}>
-                {tech}
-                {index !== ABATechStack.length - 1 ? "," : ""}
-              </Text>
-            </View>
-          ))}
-        </View>
       </View>
     </View>
   );

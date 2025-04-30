@@ -12,6 +12,8 @@ const styles = StyleSheet.create({
     overflow: "hidden",
     display: "flex",
     flexDirection: "row",
+    backgroundColor: "white",
+    maxWidth: 604,
   },
   infoSegmentContainer: {
     width: "236px",
@@ -31,12 +33,16 @@ const styles = StyleSheet.create({
     rowGap: "8px",
     backgroundColor: "white",
   },
+  pageContainer: {
+    paddingTop: 10,
+    paddingBottom: 10,
+  },
 });
 
 export const PDFcv: React.FC = () => {
   return (
     <Document>
-      <Page size="A4">
+      <Page size="A4" style={styles.pageContainer}>
         <View style={styles.cvContainer}>
           <InfoSegment />
           <DetailsSegment />

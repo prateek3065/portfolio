@@ -1,12 +1,13 @@
 "use client";
 import { Text, StyleSheet, View, Image } from "@react-pdf/renderer";
+import RolesAndResponsibilitiesWebbey from "./roles-and-responsibilities-webbey/roles-and-responsibilities-webbey";
 
 const webbeyTechnologiesStyles = StyleSheet.create({
   container: {
     display: "flex",
     flexDirection: "column",
-    paddingLeft: 20,
-    paddingRight: 20,
+    paddingLeft: 5,
+    paddingRight: 14,
     marginTop: 12, // mt-3 => 3 * 4
   },
   header: {
@@ -22,8 +23,8 @@ const webbeyTechnologiesStyles = StyleSheet.create({
     gap: 8, // gap-x-2 => 2 * 4
   },
   logoWrapper: {
-    width: 27, // w-7 => 7 * 4
-    height: 27, // h-[28px]
+    width: 28, // w-7 => 7 * 4
+    height: 28, // h-[28px]
     aspectRatio: 1, // aspect-square
     backgroundColor: "#ede8e8",
     overflow: "hidden",
@@ -31,9 +32,10 @@ const webbeyTechnologiesStyles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     position: "relative",
+    left: 2,
     // borderWidth: 2,
     borderColor: "#ffffff",
-    borderRadius: 10, // rounded-2xl
+    borderRadius: 15, // rounded-2xl
     // boxShadow is NOT supported in react-pdf directly
   },
   logoImage: {
@@ -41,6 +43,7 @@ const webbeyTechnologiesStyles = StyleSheet.create({
     height: 24, // h-[28px]
     position: "absolute",
     left: 2,
+    top: 3, // relative top-[2px]
     // bottom: 2,
     display: "flex",
     // width: "100%",
@@ -57,16 +60,18 @@ const webbeyTechnologiesStyles = StyleSheet.create({
     fontSize: 12,
   },
   role: {
-    fontSize: 14, // text-sm ≈ 14px
+    fontSize: 10,
     color: "#757575",
     fontStyle: "italic",
   },
   rightSection: {
     display: "flex",
     flexDirection: "column",
-    fontSize: 10, // text-xs ≈ 10px
+    fontSize: 10,
     color: "#233b5f",
     textAlign: "right",
+    marginRight: 8,
+    alignItems: "flex-end",
   },
   details: {
     display: "flex",
@@ -76,11 +81,69 @@ const webbeyTechnologiesStyles = StyleSheet.create({
     paddingTop: 8, // pt-2 => 2 * 4
     gap: 4, // gap-y-1 => 1 * 4
   },
+  skillsWrapper: {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    fontSize: 10,
+    color: "#233b5f",
+    columnGap: 5,
+    marginTop: 4,
+    maxWidth: "365px",
+  },
+  skillItem: {
+    display: "flex",
+    height: 11, // h-4 => 4 * 4
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  skillText: {
+    fontSize: 10,
+    color: "#757575",
+  },
+  skillLabelContainer: {
+    height: 12,
+    display: "flex",
+    alignItems: "center",
+  },
+  lineItem: {
+    display: "flex",
+    flexDirection: "row",
+    gap: 8,
+    alignItems: "flex-start",
+    marginTop: 8,
+  },
+  bulletSpace: {
+    display: "flex",
+    flexDirection: "row",
+    width: 28,
+    flexShrink: 0,
+  },
 });
+
+const Skills = [
+  "ReactJS",
+  "Typescript",
+  "React Context",
+  "MobX",
+  "Bootstrap",
+  "SCSS",
+  "Git",
+  "Github",
+  "Postman",
+  "Javascript",
+  "HTML",
+  "CSS",
+  "SEO",
+  "JAVA",
+  "Spring Boot",
+  "Microservices",
+  "REST API",
+];
 
 const WebbeyTechnologies: React.FC = () => {
   return (
-    <View style={webbeyTechnologiesStyles.container}>
+    <View id="webbey" style={webbeyTechnologiesStyles.container}>
       <View style={webbeyTechnologiesStyles.header}>
         <View style={webbeyTechnologiesStyles.leftSection}>
           <View style={webbeyTechnologiesStyles.logoWrapper}>
@@ -104,8 +167,24 @@ const WebbeyTechnologies: React.FC = () => {
         </View>
       </View>
       <View style={webbeyTechnologiesStyles.details}>
-        {/* Fill your details here later */}
+        <RolesAndResponsibilitiesWebbey />
       </View>
+      {/* <View style={webbeyTechnologiesStyles.lineItem}>
+        <View style={webbeyTechnologiesStyles.bulletSpace} />
+        <View style={webbeyTechnologiesStyles.skillsWrapper}>
+          <Text style={webbeyTechnologiesStyles.skillLabelContainer}>
+            Skills aquired at Particle41:
+          </Text>
+          {Skills.map((tech, index) => (
+            <View key={tech} style={webbeyTechnologiesStyles.skillItem}>
+              <Text style={webbeyTechnologiesStyles.skillText}>
+                {tech}
+                {index !== Skills.length - 1 ? "," : ""}
+              </Text>
+            </View>
+          ))}
+        </View>
+      </View> */}
     </View>
   );
 };
