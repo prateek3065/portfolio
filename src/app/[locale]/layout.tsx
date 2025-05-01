@@ -24,12 +24,6 @@ type LocaleLayoutProps = {
   children: ReactNode;
 };
 
-export function generateStaticParams() {
-  const staticParams = routing.locales.map((locale) => ({ locale }));
-  console.log("generateStaticParams1", staticParams);
-  return staticParams;
-}
-
 export default async function LocaleLayout({
   params,
   children,

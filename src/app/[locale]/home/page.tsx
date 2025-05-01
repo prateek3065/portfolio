@@ -6,8 +6,9 @@ import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
-  const staticParams = routing.locales.map((locale) => ({ locale }));
-  console.log("generateStaticParams at page", staticParams);
+  const staticParams = routing.locales.map((locale) => {
+    return { locale: locale };
+  });
   return staticParams;
 }
 

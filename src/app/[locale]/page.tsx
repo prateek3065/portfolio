@@ -8,6 +8,13 @@ type PageProps = {
   params: Promise<{ locale: string }>; // Make params a Promise
 };
 
+export function generateStaticParams() {
+  const staticParams = routing.locales.map((locale) => {
+    return { locale: locale };
+  });
+  return staticParams;
+}
+
 export default async function Page({ params }: PageProps) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
