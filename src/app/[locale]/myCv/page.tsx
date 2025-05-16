@@ -175,7 +175,7 @@ const Particle41: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col text-xs text-[#233b5f]">
-          <div>Pune</div>
+          <div>Pune, India</div>
           <div>Aug 2021 - Present</div>
         </div>
       </div>

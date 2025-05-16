@@ -47,7 +47,6 @@ const introStyles = StyleSheet.create({
     fontSize: 14, // text-sm
     fontWeight: "extrabold", // closest match, might need custom font weight registration
     color: "#233b5f",
-    textDecoration: "underline",
   },
   divider: {
     width: "300px",
@@ -76,9 +75,9 @@ const Introduction: React.FC = () => {
           codebases and delivering high-quality, bug-free solutions. I’ve led
           multiple projects from scratch, creating user-engaging interfaces that
           drive revenue. Known for problem-solving, consistency, and
-          performance-driven design. I boost team efficiency by organizing
-          workflows, mentoring juniors, and accelerating delivery without
-          sacrificing quality.
+          performance-driven design. Capable of driving team efficiency by
+          organizing workflows, mentoring juniors, and accelerating delivery
+          without sacrificing quality.
         </Text>
       </View>
     </View>

@@ -23,7 +23,6 @@ const experienceDetailsStyles = StyleSheet.create({
     fontSize: 14, // text-sm
     fontWeight: "extrabold", // closest match, might need custom font weight registration
     color: "#233b5f",
-    textDecoration: "underline",
   },
   divider: {
     width: "300px",

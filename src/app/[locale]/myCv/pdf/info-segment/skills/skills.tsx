@@ -1,9 +1,9 @@
 "use client";
-import { StyleSheet, View, Text } from "@react-pdf/renderer";
+import { StyleSheet, View, Text, Svg, Path } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 25,
+    marginTop: 30,
     width: "100%",
     display: "flex",
     flexDirection: "column",
@@ -11,8 +11,9 @@ const styles = StyleSheet.create({
   },
   skillslabel: {
     color: "white",
-    fontSize: 12,
-    paddingLeft: 10,
+    fontSize: 13,
+    paddingLeft: 4,
+    fontStyle: "italic",
   },
   skillItem: {
     display: "flex",
@@ -49,6 +50,14 @@ const styles = StyleSheet.create({
     width: 3,
     height: 3,
     borderRadius: "32px",
+  },
+  skillHeaderContianer: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  skillLogoContainer: {
+    display: "flex",
   },
 });
 
@@ -95,7 +104,15 @@ const skills = [
 const Skills: React.FC = () => {
   return (
     <View id="skills-section" style={styles.container}>
-      <Text style={styles.skillslabel}>Skills</Text>
+      <View style={styles.skillHeaderContianer}>
+        <View style={styles.skillLogoContainer}>
+          <Svg viewBox="0 0 24 24" fill="white" width="15" height="15">
+            <Path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"></Path>
+          </Svg>
+        </View>
+        <Text style={styles.skillslabel}>Skills</Text>
+      </View>
+
       <View id="skills-container" style={styles.skillsWrapper}>
         {skills.map((tech) => (
           <View key={tech} style={styles.skillItem}>

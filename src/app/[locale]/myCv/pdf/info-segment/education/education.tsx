@@ -89,7 +89,7 @@ export default Education;
 
 const DegreeHat: React.FC = () => {
   return (
-    <Svg viewBox="0 0 24 24" fill="white" width="12" height="12">
+    <Svg viewBox="0 0 24 24" fill="white" width="18" height="18">
       <Path d="M12 2 0 9 12 16 22 10.1667V17.5H24V9L12 2ZM3.99902 13.4905V18.0001C5.82344 20.429 8.72812 22.0001 11.9998 22.0001 15.2714 22.0001 18.1761 20.429 20.0005 18.0001L20.0001 13.4913 12.0003 18.1579 3.99902 13.4905Z"></Path>
     </Svg>
   );

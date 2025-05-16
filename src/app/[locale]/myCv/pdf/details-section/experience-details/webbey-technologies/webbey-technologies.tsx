@@ -162,7 +162,7 @@ const WebbeyTechnologies: React.FC = () => {
           </View>
         </View>
         <View style={webbeyTechnologiesStyles.rightSection}>
-          <Text>Kolkata</Text>
+          <Text>Kolkata, India</Text>
           <Text>Oct 2019 - Aug 2021</Text>
         </View>
       </View>

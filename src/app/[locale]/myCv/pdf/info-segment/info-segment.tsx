@@ -7,8 +7,12 @@ import Phone from "./phone/phone";
 import Location from "./location/location";
 import Education from "./education/education";
 import Footer from "./footer/footer";
+import Recommendations from "./recommendations/recommendations";
+import OnlineIcon from "./online-icon/online-icon";
+
 const styles = StyleSheet.create({
   infoSegmentContainer: {
+    position: "relative",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -50,6 +54,8 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     padding: 2,
     borderRadius: 60,
+    marginTop: 10,
+    position: "relative",
   },
   infoSectionItemsContainer: {
     display: "flex",
@@ -69,9 +75,12 @@ const InfoSegment: React.FC = () => {
               style={styles.profileImage}
             />
           </View>
+          <OnlineIcon />
         </View>
         <NameDesignation />
+
         <Skills />
+        <Recommendations />
         <Education />
         <Email />
         <Phone />

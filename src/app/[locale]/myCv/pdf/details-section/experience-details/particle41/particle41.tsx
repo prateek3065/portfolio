@@ -163,7 +163,7 @@ const Particle41: React.FC = () => {
           </View>
         </View>
         <View style={particle41Styles.rightSection}>
-          <Text>Pune {" (Hybrid)"}</Text>
+          <Text>Pune, India (Remote)</Text>
           <Text>Aug 2021 - Present</Text>
         </View>
       </View>
