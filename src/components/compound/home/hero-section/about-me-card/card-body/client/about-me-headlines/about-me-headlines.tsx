@@ -2,7 +2,7 @@
 
 import { RootState } from "@/redux/store";
 import { useTranslations } from "next-intl";
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import Paragraph from "./paragraph/paragraph";
 
@@ -96,10 +96,6 @@ const AboutMeHeadlines: React.FC = () => {
   // line3 23/84<=progress<43/84
   // line4 43/84<=progress<63/84
   // line5 63/84<=progress<84/84
-
-  useEffect(() => {
-    console.log("combinedWordDetails", combinedWordDetails);
-  }, [combinedWordDetails]);
 
   return (
     <div className="flex flex-col pt-3 gap-y-4">

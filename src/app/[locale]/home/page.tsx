@@ -18,7 +18,6 @@ type PageProps = {
 
 export default async function Page({ params }: PageProps) {
   const { locale } = await params;
-  console.log("Page props", locale);
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }

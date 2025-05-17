@@ -9,16 +9,10 @@ type LocaleLayoutProps = {
 
 export function generateStaticParams() {
   const staticParams = routing.locales.map((locale) => ({ locale }));
-  console.log("generateStaticParams2", staticParams);
   return staticParams;
 }
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: LocaleLayoutProps) {
-  const data = await params;
-  console.log("LocaleLayout", data);
+export default async function LocaleLayout({ children }: LocaleLayoutProps) {
   return (
     <div className="h-full w-full bg-black relative">
       <Header />
