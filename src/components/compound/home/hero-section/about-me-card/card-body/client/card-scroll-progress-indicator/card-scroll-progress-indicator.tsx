@@ -16,8 +16,8 @@ const CardScrollProgressIndicator: React.FC = () => {
   }, [heroCardScrollProgress]);
   return (
     <span
-      className="absolute top-0 left-0 w-full bg-[#A594FD] rounded-full"
-      style={{ height: heroCardScrollProgress * 100 + "%" }}
+      className="absolute top-0 left-0 h-[1px] bg-[#A594FD] rounded-full"
+      style={{ width: heroCardScrollProgress * 100 + "%" }}
     ></span>
   );
 };

@@ -18,9 +18,10 @@ const WithRotationOnScroll: React.FC<{
   return (
     <div
       ref={ref}
-      className="relative grow rounded-2xl bg-black"
+      className="relative grow rounded-2xl"
       style={{
         // border: "1px solid #4d4d4d8c",
+
         translate: "none",
         rotate: "none",
         scale: "none",
@@ -33,7 +34,7 @@ const WithRotationOnScroll: React.FC<{
         position: "relative",
         zIndex: 1,
         display: "flex",
-
+        justifyContent: "center",
         alignItems: "center",
         // paddingTop: "6.875rem",
       }}
