@@ -1,12 +1,10 @@
 import AboutMeHeadlines from "./client/about-me-headlines/about-me-headlines";
-import CardScrollProgressIndicator from "./client/card-scroll-progress-indicator/card-scroll-progress-indicator";
-import DownArrow from "./client/down-arrow/down-arrow";
 import MyProfilePhoto from "./my-profile-photo/my-profile-photo";
 
 const CardBody: React.FC = () => {
   return (
-    <div className="relative grow flex pb-[10px]">
-      <div className="relative flex-grow-[229] shrink basis-0 flex flex-col-reverse md:flex-row justify-between gap-x-2 p-12">
+    <div className="relative flex flex-col pb-[10px] grow">
+      <div className="relative z-20 flex-grow-[229] shrink basis-0 flex flex-col-reverse md:flex-row justify-between gap-x-2 p-12">
         <div className="flex grow">
           <AboutMeHeadlines />
         </div>
@@ -16,16 +14,36 @@ const CardBody: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex-grow-[15] shrink basis-0 max-w-[57px] min-w-[40px]">
-        <div className="absolute w-full top-24 right-1 flex flex-col items-center gap-2">
-          <span className="text-[12px] opacity-40"></span>
-          <div className="w-[4px] h-[400px] bg-[#232323] relative rounded-full overflow-hidden">
-            <CardScrollProgressIndicator />
-          </div>
-        </div>
-      </div>
-      <div className="absolute w-full flex justify-center bottom-20">
+
+      {/* <div className="absolute w-full flex justify-center bottom-20">
         <DownArrow />
+      </div> */}
+      <CardBackground />
+    </div>
+  );
+};
+
+// create array of number from 0 to 1000000
+
+const CardBackground: React.FC = () => {
+  return (
+    <div className="absolute top-0 w-full h-full p-[10px] overflow-hidden">
+      <div
+        className="w-full h-full rounded-lg"
+        style={{
+          background: "linear-gradient(to bottom right, #1d1d1d, #000000)",
+        }}
+      >
+        {/* <div className="h-full w-full flex flex-wrap gap-2">
+          {arr.map((index) => {
+            return (
+              <div
+                key={index}
+                className="relative top-4 left-4 w-1 h-1 bg-[#80808021] rounded-full"
+              ></div>
+            );
+          })}
+        </div> */}
       </div>
     </div>
   );

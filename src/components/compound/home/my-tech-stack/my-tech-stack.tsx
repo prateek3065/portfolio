@@ -1,32 +1,36 @@
+import WithFromDownAppear from "./client/with-from-down-appear";
+
 const MyTechStack: React.FC = () => {
   return (
-    <section className="h-[400rem] w-full relative transition-all duration-150 ease-in pt-15">
-      <div className="text-white text-6xl font-extrabold w-full text-center flex flex-col">
-        <div> What I Build With</div>
-        <div className="flex items-center justify-center mt-10 gap-4 flex-wrap">
-          <WithContainer height="4rem" width="10rem">
-            <NextJsLogo />
-          </WithContainer>
-          <WithContainer>
-            <BootstrapLogo />
-          </WithContainer>
-          <WithContainer>
-            <TailwindCssLogo />
-          </WithContainer>
-          <WithContainer>
-            <ReactLogo />
-          </WithContainer>
-          <WithContainer height="5rem">
-            <ReduxLogo />
-          </WithContainer>
-          <WithContainer>
-            <TypescriptLogo />
-          </WithContainer>
-          <WithContainer>
-            <Javascrip />
-          </WithContainer>
+    <section className="w-full relative transition-all duration-150 ease-in pt-15 px-2 sm:px-4 md:px-6 lg:px-8">
+      <WithFromDownAppear>
+        <div className="text-white text-6xl font-extrabold w-full text-center flex flex-col">
+          <div> What I Build With</div>
+          <div className="flex items-center justify-center mt-10 gap-4 flex-wrap">
+            <WithContainer height="4rem" width="10rem">
+              <NextJsLogo />
+            </WithContainer>
+            <WithContainer>
+              <BootstrapLogo />
+            </WithContainer>
+            <WithContainer>
+              <TailwindCssLogo />
+            </WithContainer>
+            <WithContainer>
+              <ReactLogo />
+            </WithContainer>
+            <WithContainer height="5rem">
+              <ReduxLogo />
+            </WithContainer>
+            <WithContainer>
+              <TypescriptLogo />
+            </WithContainer>
+            <WithContainer>
+              <Javascrip />
+            </WithContainer>
+          </div>
         </div>
-      </div>
+      </WithFromDownAppear>
     </section>
   );
 };

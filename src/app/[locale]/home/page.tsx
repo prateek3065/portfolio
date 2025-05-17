@@ -26,10 +26,11 @@ export default async function Page({ params }: PageProps) {
   return (
     <>
       <HeroSection />
-      <div className="relative w-full bottom-[2rem] px-8 md:px-40 lg:px-60">
+      {/* <div className="relative w-full bottom-[2rem] px-8 md:px-40 lg:px-60">
         <div className="h-[1px] bg-[#262626]" />
-      </div>
+      </div> */}
       <MyTechStack />
+      <section className="h-[50rem]" />
     </>
   );
 }
