@@ -1,10 +1,10 @@
 "use client";
 
+import Paragraph from "@/app/[locale]/home/(page)/hero-section/about-me-card/card-body/client/about-me-headline/paragraph/paragraph";
 import { RootState } from "@/redux/store";
 import { useTranslations } from "next-intl";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
-import Paragraph from "./paragraph/paragraph";
 
 const getTotalWords = (text: string) => {
   const words = text.split(" ");
@@ -97,7 +97,6 @@ const AboutMeHeadlines: React.FC = () => {
   // line4 43/84<=progress<63/84
   // line5 63/84<=progress<84/84
 
-
   return (
     <div className="flex flex-col pt-3 gap-y-4">
       <div
@@ -106,7 +105,7 @@ const AboutMeHeadlines: React.FC = () => {
       >
         Hi, let&lsquo;s build something beautiful.
       </div>
-      <div className="text-4xl sm:text-5xl md:text-6xl max-w-[40rem] h-full overflow-hidden ">
+      <div className="text-3xl sm:text-5xl md:text-6xl max-w-[40rem] h-full overflow-hidden ">
         <Paragraph {...currentParagraph} />
       </div>
     </div>

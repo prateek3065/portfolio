@@ -1,6 +1,6 @@
 import AboutMeCard from "./about-me-card/about-me-card";
 import Image from "next/image";
-import UsingHeroSectionScroll from "./client/using-hero-section-scroll";
+import UsingHeroSectionScroll from "./client/using-hero-section-scroll/using-hero-section-scroll";
 
 const HeroSection: React.FC = () => {
   return (

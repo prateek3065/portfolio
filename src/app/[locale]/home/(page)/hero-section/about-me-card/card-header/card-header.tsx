@@ -1,8 +1,8 @@
-import Button from "@/components/common/buttons/mac-buttons";
-import MiniButton from "@/components/common/buttons/mini-button";
+import Button from "@/common/components/buttons/mac-buttons";
+import MiniButton from "@/common/components/buttons/mini-button";
 import ProfileAlphabet, {
   ProfileAlphabetProps,
-} from "@/components/common/profile-alphabet/profile-alphabet";
+} from "@/common/components/profile-alphabet/profile-alphabet";
 
 const alphabets: Array<ProfileAlphabetProps> = [
   {
