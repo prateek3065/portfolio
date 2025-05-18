@@ -25,5 +25,5 @@ export default async function Page({ params }: PageProps) {
     href: "/home",
     locale: locale,
   });
-  return <div>Redirecting</div>;
+  return <></>;
 }

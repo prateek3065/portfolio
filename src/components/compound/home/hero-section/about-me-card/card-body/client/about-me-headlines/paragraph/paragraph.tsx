@@ -34,7 +34,6 @@ const Paragraph: React.FC<ParagraphProps> = (props) => {
     const wordLength = paragraph.split(" ").length;
     const incFactor =
       (upperProgressThreshold - lowerProgressThreshold) / wordLength;
-    console.log("incFactor", incFactor);
     const progressDivision: Array<{
       lower: number;
       upper: number;
@@ -65,10 +64,6 @@ const Paragraph: React.FC<ParagraphProps> = (props) => {
     props.lowerProgressThreshold,
     props.upperProgressThreshold,
   ]);
-
-  useEffect(() => {
-    console.log("props", props);
-  }, [props]);
 
   return (
     <p className="flex gap-x-3 flex-wrap gap-y-3">
