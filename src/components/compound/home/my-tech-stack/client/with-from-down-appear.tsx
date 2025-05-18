@@ -15,7 +15,6 @@ const WithFromDownAppear: React.FC<WithFromDownAppearProps> = (props) => {
     top: "20rem",
   });
   useEffect(() => {
-    console.log("bodyTop", bodyTop);
     if (bodyTop > 350) {
       setStyles({
         top: "-5rem",

@@ -29,7 +29,6 @@ export default async function LocaleLayout({
   children,
 }: LocaleLayoutProps) {
   const { locale } = await params;
-  console.log("LocaleLayout1", locale);
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }

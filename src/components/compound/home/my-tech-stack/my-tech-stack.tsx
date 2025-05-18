@@ -4,9 +4,9 @@ const MyTechStack: React.FC = () => {
   return (
     <section className="w-full relative transition-all duration-150 ease-in pt-15 px-2 sm:px-4 md:px-6 lg:px-8">
       <WithFromDownAppear>
-        <div className="text-white text-6xl font-extrabold w-full text-center flex flex-col">
+        <div className="text-white text-6xl font-extrabold w-full text-center flex flex-col items-center">
           <div> What I Build With</div>
-          <div className="flex items-center justify-center mt-10 gap-4 flex-wrap">
+          <div className="flex items-center justify-center mt-10 gap-4 flex-wrap max-w-[32rem]">
             <WithContainer height="4rem" width="10rem">
               <NextJsLogo />
             </WithContainer>
