@@ -1,5 +1,5 @@
-import HeroSection from "@/components/compound/home/hero-section/hero-section";
-import MyTechStack from "@/components/compound/home/my-tech-stack/my-tech-stack";
+import HeroSection from "@/app/[locale]/home/(page)/hero-section/hero-section";
+import MyTechStack from "@/app/[locale]/home/(page)/my-tech-stack/my-tech-stack";
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";

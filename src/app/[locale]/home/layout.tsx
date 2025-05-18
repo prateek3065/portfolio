@@ -31,7 +31,7 @@ async function Header(props: HeaderProps) {
   let session = null;
   if (!props.suspense) session = await auth();
   return (
-    <div className="w-full fixed flex text-white z-20 justify-between items-center p-8">
+    <div className="hidden md:flex w-full fixed text-white z-20 justify-between items-center p-8">
       <div className="flex gap-x-2">
         <Image
           src="/assets/app-logo.svg"
