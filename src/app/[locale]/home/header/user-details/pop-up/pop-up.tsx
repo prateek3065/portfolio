@@ -14,7 +14,10 @@ const PopUp: React.FC<PopUpProps> = (props) => {
     _signOut();
   };
   return (
-    <div className="w-35 h-40 flex flex-col justify-between border border-[#8080804a] rounded-xl bg-black py-4 px-3">
+    <div
+      className="w-35 h-40 flex flex-col justify-between border border-[#8080804a] rounded-xl bg-black py-4 px-3"
+      style={{ boxShadow: "white 0px 0px 8px -3px" }}
+    >
       <div className="text-white">{props.name}</div>
       <LocaleSelector />
       <button
