@@ -1,7 +1,7 @@
 "use client";
 import { setBodyScrollTop } from "@/redux/slices/common-slice";
 import debounce from "@/utils/general-functions/debounce";
-import { useCallback, useMemo } from "react";
+import { useCallback, useMemo, useRef } from "react";
 import { useDispatch } from "react-redux";
 
 const WithBodyScrollEvent: React.FC<{
@@ -27,9 +27,13 @@ const WithBodyScrollEvent: React.FC<{
     [debouncedScroll]
   );
 
+  const bodyRef = useRef<HTMLBodyElement | null>(null);
+
   return (
     <body
+      ref={bodyRef}
       className="h-screen overflow-auto overflow-x-hidden bg-black"
+      style={{ scrollbarWidth: "none" }}
       onScroll={handleScroll}
     >
       {props.children}

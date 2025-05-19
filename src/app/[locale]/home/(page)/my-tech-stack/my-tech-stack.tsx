@@ -8,6 +8,12 @@ import ReduxLogo from "./redux-logo/redux-logo";
 import TailwindCssLogo from "./tailwind-css-logo/tailwind-css-logo";
 import TypescriptLogo from "./typescript-logo/typescript-logo";
 import WithContainer from "./with-container/with-container";
+import AWSLogo from "./aws-logo/aws-logo";
+import GoogleAnalyticsLogo from "./google-analytics-logo/google-analytics-logo";
+import NodeJsLogo from "./nodejs-logo/nodejs-logo";
+import FigmaLogo from "./figma-logo/figma-logo";
+import HTMLLogo from "./html-logo/html-logo";
+import NextIntlLogo from "./next-intl-logo/next-intl-logo";
 
 const MyTechStack: React.FC = () => {
   const t = useTranslations();
@@ -16,7 +22,7 @@ const MyTechStack: React.FC = () => {
       <WithFromDownAppear>
         <div className="text-white text-6xl font-extrabold w-full text-center flex flex-col items-center">
           <div>{t("COMMON.WHAT_I_BUILD")}</div>
-          <div className="flex items-center justify-center mt-10 gap-4 flex-wrap max-w-[32rem]">
+          <div className="flex items-center justify-center mt-10 gap-4 flex-wrap max-w-[40rem]">
             <WithContainer height="4rem" width="10rem">
               <NextJsLogo />
             </WithContainer>
@@ -37,6 +43,24 @@ const MyTechStack: React.FC = () => {
             </WithContainer>
             <WithContainer>
               <JavascripLogo />
+            </WithContainer>
+            <WithContainer>
+              <AWSLogo />
+            </WithContainer>
+            <WithContainer>
+              <GoogleAnalyticsLogo />
+            </WithContainer>
+            <WithContainer>
+              <NodeJsLogo />
+            </WithContainer>
+            <WithContainer>
+              <FigmaLogo />
+            </WithContainer>
+            <WithContainer>
+              <HTMLLogo />
+            </WithContainer>
+            <WithContainer>
+              <NextIntlLogo />
             </WithContainer>
           </div>
         </div>
