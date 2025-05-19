@@ -103,7 +103,7 @@ const AboutMeHeadlines: React.FC = () => {
         className="text-lg px-4 p-1 rounded-2xl max-w-[310px]"
         style={{ backgroundColor: "rgb(112 83 255)" }}
       >
-        Hi, let&lsquo;s build something beautiful.
+        {t("HOME.ABOUT_ME_CARD.WELCOME_TEXT")}
       </div>
       <div className="text-3xl sm:text-5xl md:text-6xl max-w-[40rem] h-full overflow-hidden ">
         <Paragraph {...currentParagraph} />

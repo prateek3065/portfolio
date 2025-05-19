@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import BootstrapLogo from "./bootstrap-logo/bootstrap-logo";
 import WithFromDownAppear from "./client/with-from-drop-down-appear/with-from-down-appear";
 import JavascripLogo from "./javascript-logo/javascript-logo";
@@ -9,11 +10,12 @@ import TypescriptLogo from "./typescript-logo/typescript-logo";
 import WithContainer from "./with-container/with-container";
 
 const MyTechStack: React.FC = () => {
+  const t = useTranslations();
   return (
     <section className="w-full relative transition-all duration-150 ease-in pt-15 px-2 sm:px-4 md:px-6 lg:px-8">
       <WithFromDownAppear>
         <div className="text-white text-6xl font-extrabold w-full text-center flex flex-col items-center">
-          <div> What I Build With</div>
+          <div>{t("COMMON.WHAT_I_BUILD")}</div>
           <div className="flex items-center justify-center mt-10 gap-4 flex-wrap max-w-[32rem]">
             <WithContainer height="4rem" width="10rem">
               <NextJsLogo />

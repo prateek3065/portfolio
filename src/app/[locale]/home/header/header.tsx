@@ -1,12 +1,14 @@
 import { auth, signIn } from "@/auth";
 import PortfolioLogo from "./portfolio-logo/portfolio-logo";
 import UserDetails from "./user-details/user-details";
+import { getTranslations } from "next-intl/server";
 
 type HeaderProps = {
   suspense: boolean;
   locale: "en" | "de" | "pl";
 };
 async function Header(props: HeaderProps) {
+  const t = await getTranslations();
   let session = null;
   if (!props.suspense) session = await auth();
   return (
@@ -18,10 +20,10 @@ async function Header(props: HeaderProps) {
             "use server";
             await signIn("google", { redirectTo: `/${props.locale}/home` });
           }}
-          className="hover hover:cursor-pointer p-2 border-2 border-[#8080804a] rounded-xl hover:scale-105 transition-all duration-200 hover:bg-[#181818]"
+          className="hover hover:cursor-pointer px-3 p-2 border-2 border-[#8080804a] rounded-xl hover:scale-105 transition-all duration-200 hover:bg-[#181818]"
           style={{ backdropFilter: "blur(18px)" }}
         >
-          Sign in with Google
+          {t("COMMON.SIGN_IN")}
         </button>
       ) : null}
       {session?.user && !props.suspense ? (

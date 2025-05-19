@@ -1,6 +1,7 @@
 {
   "HOME": {
     "ABOUT_ME_CARD": {
+      "WELCOME_TEXT": "Cześć, zbudujmy razem coś niesamowitego.",
       "INTRO": {
         "LINE0": "Cześć, projektuję interfejsy, które wydają się być stworzone z myślą o użytkownikach.",
         "LINE1": "Nie tylko dopracowane - ale i celowe. Szybkie, elastyczne i cicho potężne.",
@@ -20,6 +21,9 @@
     "YES": "Tak",
     "NO": "Nie",
     "OK": "OK",
-    "CLOSE": "Zamknij"
+    "CLOSE": "Zamknij",
+    "WHAT_I_BUILD": "Co buduję z",
+    "SIGN_OUT": "Wyloguj się",
+    "SIGN_IN": "Zaloguj się"
   }
 }

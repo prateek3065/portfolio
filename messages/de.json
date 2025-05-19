@@ -1,6 +1,7 @@
 {
   "HOME": {
     "ABOUT_ME_CARD": {
+      "WELCOME_TEXT": "Hallo, lass uns gemeinsam etwas Großartiges schaffen.",
       "INTRO": {
         "LINE0": "Hallo, ich entwerfe Frontends, die sich anfühlen, als wären sie schon immer so gedacht gewesen.",
         "LINE1": "Nicht nur poliert - sondern auch zielgerichtet. Schnell, flexibel und leise leistungsstark.",
@@ -20,6 +21,9 @@
     "YES": "Ja",
     "NO": "Nein",
     "OK": "OK",
-    "CLOSE": "Schließen"
+    "CLOSE": "Schließen",
+    "WHAT_I_BUILD": "Was ich baue mit",
+    "SIGN_OUT": "Abmelden",
+    "SIGN_IN": "Anmelden"
   }
 }

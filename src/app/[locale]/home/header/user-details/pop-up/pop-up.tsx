@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { _signOut } from "../server-actions/signout";
 import LocaleSelector from "./locale-selector/locale-selector";
 
@@ -8,6 +9,7 @@ type PopUpProps = {
   name: string;
 };
 const PopUp: React.FC<PopUpProps> = (props) => {
+  const t = useTranslations();
   const handleSignOut = async () => {
     _signOut();
   };
@@ -19,7 +21,7 @@ const PopUp: React.FC<PopUpProps> = (props) => {
         className="hover w-full flex justify-center hover:cursor-pointer bg-white text-black text-sm p-1 border-2 border-[#8080804a] rounded-xl transition-all duration-200"
         onClick={handleSignOut}
       >
-        Sign Out
+        {t("COMMON.SIGN_OUT")}
       </button>
     </div>
   );
