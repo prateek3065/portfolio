@@ -2345,6 +2345,11 @@ next-auth@^5.0.0-beta.25:
   dependencies:
     "@auth/core" "0.39.1"
 
+next-client-utils@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/next-client-utils/-/next-client-utils-1.0.14.tgz#5bdecf1f9dc05dd0e26ed3f136a2d39096c0739f"
+  integrity sha512-r2hGO++uK3wD3ImWQpfvz3vM6AV5t+MgG/RV6UtPYGuOHS0aaXHDoGxJ+AWWGIZeiloJWQucprH8/1OTh6PtBQ==
+
 next-intl@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/next-intl/-/next-intl-4.0.2.tgz#952cb392e441c4feedc78d158a27c5d3c1d24991"

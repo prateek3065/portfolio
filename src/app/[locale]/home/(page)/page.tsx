@@ -25,11 +25,11 @@ export default async function Page({ params }: PageProps) {
   return (
     <>
       <HeroSection />
-      {/* <div className="relative w-full bottom-[2rem] px-8 md:px-40 lg:px-60">
-        <div className="h-[1px] bg-[#262626]" />
-      </div> */}
       <MyTechStack />
-      <section className="h-[50rem]" />
+      <section className="h-[40rem]" />
+      <section className="text-white w-full flex items-center justify-center text-3xl h-20">
+        Other Details Comming Soon ...
+      </section>
     </>
   );
 }
