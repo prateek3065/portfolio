@@ -1,12 +1,13 @@
-import SecondBlockCardsContainer from "./second-block-cards-cotainer/second-block-cards-cotainer";
-import SectionIntroText from "./section-intro-text/section-intro-text";
+import WithOnScrollRetardation from "./client/with-on-scroll-retardation/with-on-scroll-retardation";
+import NextJs from "./next-js/next-js";
 
 const SecondBlock: React.FC = () => {
   return (
-    <div className="flex flex-col gap-y-10">
-      <SectionIntroText />
-      <SecondBlockCardsContainer />
-    </div>
+    <WithOnScrollRetardation>
+      <div className="flex flex-col gap-y-10">
+        <NextJs />
+      </div>
+    </WithOnScrollRetardation>
   );
 };
 export default SecondBlock;

@@ -1,5 +1,5 @@
-import NextJsLogo from "../../../../small-screen-view/next-js-logo/next-js-logo";
-import Card from "../../../common/card/card";
+import NextJsLogo from "../../../small-screen-view/next-js-logo/next-js-logo";
+import Card from "../../common/card/card";
 
 const NextJs: React.FC = () => {
   return (

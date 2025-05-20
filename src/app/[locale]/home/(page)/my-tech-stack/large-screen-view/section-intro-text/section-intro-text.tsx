@@ -2,7 +2,7 @@ import Star from "./star/star";
 
 const SectionIntroText: React.FC = () => {
   return (
-    <div className="flex flex-col text-white grow pl-10">
+    <div className="flex flex-col text-white grow pl-40">
       <div className="max-w-[28rem] flex flex-col gap-y-2">
         <span className="flex gap-x-2 items-center text-[#A594FD]">
           <div>
