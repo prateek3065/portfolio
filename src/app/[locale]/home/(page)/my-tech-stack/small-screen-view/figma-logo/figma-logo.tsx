@@ -1,10 +1,20 @@
-const FigmaLogo: React.FC = () => {
+type FigmaLogoProps = {
+  style?: React.CSSProperties;
+};
+const FigmaLogo: React.FC<FigmaLogoProps> = (props) => {
+  const {
+    style = {
+      width: "15rem",
+      height: "7.5rem",
+    },
+  } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 14.397 7.2"
-      width="120"
-      height="60"
+      // width="120"
+      // height="60"
+      style={style}
     >
       <path
         d="M2.156 6.46c.526 0 .953-.427.953-.953v-.953h-.953c-.526 0-.953.427-.953.953s.427.953.953.953z"
