@@ -1,0 +1,13 @@
+import WithOnScrollRetardation from "./client/with-on-scroll-retardation/with-on-scroll-retardation";
+import NextJs from "./next-js/next-js";
+
+const SecondBlock: React.FC = () => {
+  return (
+    <WithOnScrollRetardation>
+      <div className="flex flex-col gap-y-10">
+        <NextJs />
+      </div>
+    </WithOnScrollRetardation>
+  );
+};
+export default SecondBlock;
