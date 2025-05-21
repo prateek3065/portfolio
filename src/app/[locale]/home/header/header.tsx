@@ -12,7 +12,7 @@ async function Header(props: HeaderProps) {
   let session = null;
   if (!props.suspense) session = await auth();
   return (
-    <div className="hidden md:flex w-full fixed text-white z-20 justify-between items-center p-8">
+    <div className="hidden md:flex w-full fixed text-white z-20 justify-between items-center px-8 py-6 min-h-[88px]">
       <PortfolioLogo />
       {!session?.user && !props.suspense ? (
         <button

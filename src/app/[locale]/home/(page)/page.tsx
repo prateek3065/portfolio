@@ -4,6 +4,8 @@ import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import React from "react";
+import RecommendationSection from "./recommendation-section/recommendation-section";
 
 export function generateStaticParams() {
   const staticParams = routing.locales.map((locale) => {
@@ -26,10 +28,7 @@ export default async function Page({ params }: PageProps) {
     <>
       <HeroSection />
       <MyTechStack />
-      <section className="h-[40rem]" />
-      <section className="text-white w-full flex items-center justify-center text-3xl h-20">
-        Other Details Comming Soon ...
-      </section>
+      <RecommendationSection />
     </>
   );
 }
