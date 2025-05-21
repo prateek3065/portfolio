@@ -14,7 +14,7 @@ type RecommendationCardProps = {
 const RecommendationCard: React.FC<RecommendationCardProps> = (props) => {
   return (
     <Card>
-      <div className="flex gap-2 bg-white p-3 px-3 pb-6 rounded-3xl shadow-md max-w-[28rem] opacity-90 relative">
+      <div className="flex gap-2 bg-white p-3 px-3 pb-6 rounded-3xl shadow-md max-w-[95vw] lg:max-w-[28rem] opacity-90 relative">
         <div className="flex-shrink-0">
           <div className="hover:scale-[1.04] transition-all duration-300">
             <Link href={props.profileLink} legacyBehavior>

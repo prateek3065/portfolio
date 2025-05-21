@@ -3,12 +3,12 @@ import RecommendationCard from "./recommendation-card/recommendation-card";
 
 const RecommendationSection: React.FC = () => {
   return (
-    <section className="text-white w-full flex flex-col justify-center text-3xl">
+    <section className="text-white w-full flex flex-col justify-center text-3xl gap-y-8">
       <SectionIntroText
         line1="Top Recommendations"
         line2="Endorsements from Industry Leaders."
       />
-      <div className="flex-wrap items-center justify-center hidden lg:flex gap-x-2">
+      <div className="flex-wrap items-center justify-center flex gap-x-2 gap-y-4">
         <RecommendationCard
           nameSection="Sarah Dempsey, PMP, ACP, CSPO, ITILv4 ·"
           profileLink="https://www.linkedin.com/in/dempseysarah/"
