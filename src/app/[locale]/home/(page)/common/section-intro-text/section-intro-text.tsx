@@ -1,6 +1,10 @@
 import Star from "./star/star";
 
-const SectionIntroText: React.FC = () => {
+type SectionIntroTextProps = {
+  line1: string; //Top Recommendations
+  line2: string; //Endorsements from Industry Leaders.
+};
+const SectionIntroText: React.FC<SectionIntroTextProps> = (props) => {
   return (
     <div className="flex flex-col text-white grow pl-40">
       <div className="max-w-[28rem] flex flex-col gap-y-2">
@@ -8,11 +12,11 @@ const SectionIntroText: React.FC = () => {
           <div>
             <Star sideLength={"1.25rem"} />
           </div>
-          <div className="text-2xl">My Favorite Tools</div>
+          <div className="text-2xl">{props.line1}</div>
         </span>
 
         <div className="text-6xl font-extrabold tracking-wider">
-          Unleash Creativity Like Never Before.
+          {props.line2}
         </div>
       </div>
     </div>
