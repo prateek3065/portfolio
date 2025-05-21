@@ -1,3 +1,4 @@
+import WithOnScrollAppear from "./client/on-scroll-opacity-scaling/on-scroll-opacity-scaling";
 import Star from "./star/star";
 
 type SectionIntroTextProps = {
@@ -6,19 +7,21 @@ type SectionIntroTextProps = {
 };
 const SectionIntroText: React.FC<SectionIntroTextProps> = (props) => {
   return (
-    <div className="flex flex-col text-white grow lg:pl-40">
-      <div className="max-w-[28rem] flex flex-col gap-y-2">
-        <span className="flex gap-x-2 items-center text-[#A594FD]">
-          <div>
-            <Star sideLength={"1.25rem"} />
-          </div>
-          <div className="text-2xl">{props.line1}</div>
-        </span>
+    <div className="flex flex-col text-white grow lg:pl-40 px-10">
+      <WithOnScrollAppear>
+        <div className="max-w-[28rem] flex flex-col gap-y-2">
+          <span className="flex gap-x-2 items-center text-[#A594FD]">
+            <div>
+              <Star sideLength={"1.25rem"} />
+            </div>
+            <div className="text-2xl">{props.line1}</div>
+          </span>
 
-        <div className="text-6xl font-extrabold tracking-wider">
-          {props.line2}
+          <div className="text-6xl font-extrabold tracking-wider">
+            {props.line2}
+          </div>
         </div>
-      </div>
+      </WithOnScrollAppear>
     </div>
   );
 };

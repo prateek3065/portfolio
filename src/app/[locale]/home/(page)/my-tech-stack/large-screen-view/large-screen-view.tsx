@@ -6,6 +6,7 @@ import GoogleAnalytics from "./google-analytics/google-analytics";
 import Javascript from "./javascript/javascript";
 import NextIntl from "./next-intl/next-intl";
 import ReactLogo from "./react-logo/react-logo";
+import WithOnScrollRetardation from "./second-block/client/with-on-scroll-retardation/with-on-scroll-retardation";
 import SecondBlock from "./second-block/second-block";
 import Tailwind from "./tailwind/tailwind";
 import ThirdBlock from "./third-block/third-block";
@@ -21,19 +22,25 @@ const LargeScreenView: React.FC = () => {
       <div className="w-full flex justify-center flex-wrap gap-x-8 pt-[4.5rem]">
         <FirstBlock />
         <SecondBlock />
-        <div className="flex flex-col gap-x-6 items-center flex-wrap justify-center">
-          <Typescript />
-        </div>
-        <div className="flex flex-col gap-x-6 items-center flex-wrap ">
-          <Tailwind />
-          <ReactLogo />
-          <Javascript />
-        </div>
-        <div className="flex flex-col gap-y-2 items-center flex-wrap">
-          <Aws />
-          <NextIntl />
-          <GoogleAnalytics />
-        </div>
+        <WithOnScrollRetardation direction="reverse">
+          <div className="flex flex-col gap-x-6 items-center flex-wrap justify-center">
+            <Typescript />
+          </div>
+        </WithOnScrollRetardation>
+        <WithOnScrollRetardation retardationValue={15}>
+          <div className="flex flex-col gap-x-6 items-center flex-wrap ">
+            <Tailwind />
+            <ReactLogo />
+            <Javascript />
+          </div>
+        </WithOnScrollRetardation>
+        <WithOnScrollRetardation direction="reverse" retardationValue={25}>
+          <div className="flex flex-col gap-y-2 items-center flex-wrap">
+            <Aws />
+            <NextIntl />
+            <GoogleAnalytics />
+          </div>
+        </WithOnScrollRetardation>
         <ThirdBlock />
         <FourthBlock />
       </div>
