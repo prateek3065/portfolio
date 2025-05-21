@@ -6,7 +6,7 @@ type SectionIntroTextProps = {
 };
 const SectionIntroText: React.FC<SectionIntroTextProps> = (props) => {
   return (
-    <div className="flex flex-col text-white grow pl-40">
+    <div className="flex flex-col text-white grow lg:pl-40">
       <div className="max-w-[28rem] flex flex-col gap-y-2">
         <span className="flex gap-x-2 items-center text-[#A594FD]">
           <div>
