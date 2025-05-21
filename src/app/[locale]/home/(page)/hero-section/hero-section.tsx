@@ -4,7 +4,7 @@ import UsingHeroSectionScroll from "./client/using-hero-section-scroll/using-her
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative perspective-[1000px] h-[56rem]">
+    <section className="relative perspective-[1000px] h-[56rem] top-[30px] md:top-0">
       <div className="relative h-[40rem] flex flex-col items-center perspective-[1000px] w-full">
         <AboutMeCard />
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center -z-10">

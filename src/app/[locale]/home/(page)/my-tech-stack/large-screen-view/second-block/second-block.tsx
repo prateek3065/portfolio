@@ -3,11 +3,11 @@ import NextJs from "./next-js/next-js";
 
 const SecondBlock: React.FC = () => {
   return (
-    <WithOnScrollRetardation>
-      <div className="flex flex-col gap-y-10">
+    <div className="flex flex-col gap-y-10">
+      <WithOnScrollRetardation>
         <NextJs />
-      </div>
-    </WithOnScrollRetardation>
+      </WithOnScrollRetardation>
+    </div>
   );
 };
 export default SecondBlock;
