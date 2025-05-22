@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Prateek Portfolio",
     images: [
       {
-        url: "https://portfolio-pi-rust-90.vercel.app/assets/my-photo.jpeg",
+        url: "https://portfolio-pi-rust-90.vercel.app/my-photo.jpeg",
         width: 1200,
         height: 630,
         alt: "Profile Photo",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Prateek Sharma – Frontend Portfolio",
     description:
       "Explore production-ready Next.js projects with authentication, i18n, and more.",
-    images: ["https://portfolio-pi-rust-90.vercel.app/assets/my-photo.jpeg"],
+    images: ["https://portfolio-pi-rust-90.vercel.app/my-photo.jpeg"],
   },
 };
 
